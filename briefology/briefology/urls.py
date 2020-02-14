@@ -19,11 +19,13 @@ from django.urls import path
 from blog import views as blog_views
 from lookup import views as lookup_views
 from dictionaryanalysis import views as da_views
+from users import views as users_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blog_views.index, name='home'),
     path('blog', blog_views.blog, name='blog'),
     path('lookup', lookup_views.lookup, name='lookup'),
-    path('dictionaryanalysis', da_views.dictionaryanalysis, name='dictionaryanalysis')
+    path('dictionaryanalysis', da_views.dictionaryanalysis, name='dictionaryanalysis'),
+    path('register', users_views.register, name='register'),
 ]
