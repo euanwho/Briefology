@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-        
+
+<ol>
+{% for combination in combinations %}
+    <li>{{ combination.steno }} - {{ combination.source }}</li>
+{% endfor %}
+</ol>
 {% endblock %}
