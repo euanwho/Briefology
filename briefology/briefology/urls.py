@@ -27,5 +27,6 @@ urlpatterns = [
     path('blog', blog_views.blog, name='blog'),
     path('lookup', lookup_views.lookup, name='lookup'),
     path('dictionaryanalysis', da_views.dictionaryanalysis, name='dictionaryanalysis'),
+    path('analysisresults', da_views.analysisresults, name='analysisresults'),
     path('register', users_views.register, name='register'),
 ]
