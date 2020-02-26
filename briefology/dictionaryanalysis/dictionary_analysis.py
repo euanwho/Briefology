@@ -20,11 +20,12 @@ class Dictionary():
               dictionary[word] = [steno]
             else:
               dictionary[word].append(steno)
+      return dictionary
     elif '.rtf' in file_name:
       RtfDictionary = RtfDictionary()
       RtfDictionary.load(file_name)
       dictionary = RtfDictionary.reverse
-    return dictionary
+      return dictionary
 
     
   def get_duplicates(self):
