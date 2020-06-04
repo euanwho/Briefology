@@ -2,8 +2,14 @@
 
 {% block content %}
 
+<div class="columns is-centered">
+    <div class="column is-8 blog-container">
+        <div class="title-container">
+            <h2 class="title is-2">{{ post.title}}</h2>
+        </div>
+        <div>{{ post.text}}</div>
 
-<h2>{{ post.title }}</h2>
-<div>{{ post.text}}</div>
+    </div>
+</div>
 
 {% endblock %}

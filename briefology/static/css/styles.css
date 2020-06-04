@@ -1,3 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Roboto Slab", serif;
+  font-weight: normal; }
+
+.button {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold; }
+
+.navbar-brand a {
+  font-size: 2em; }
+
+.navbar-item {
+  font-size: 1.5em; }
+
+.title-container {
+  margin: 1.5rem; }
+
+.title-container .title {
+  text-align: center; }
+
+.post {
+  margin-bottom: 1.5rem; }
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -285,7 +313,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Open Sans", sans-serif, "Roboto Slab", serif; }
 
 code,
 pre {
@@ -828,7 +856,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Open Sans", sans-serif, "Roboto Slab", serif !important; }
 
 .is-family-secondary {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
@@ -4245,7 +4273,7 @@ a.list-item {
   padding: 20px; }
 
 .navbar {
-  background-color: white;
+  background-color: #163358;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -4743,7 +4771,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #ffffff;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -4781,7 +4809,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #ffffff;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -4863,7 +4891,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: white;
+    background-color: #163358;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
@@ -7111,4 +7139,4 @@ label.panel-block {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 2rem; }

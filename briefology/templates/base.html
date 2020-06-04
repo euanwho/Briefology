@@ -10,7 +10,7 @@
     <script src="{% static 'index.js'%}"></script>
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="{% url 'home' %}">225 and Beyond</a>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -20,7 +20,7 @@
         </a>
       </div>
 
-      <div class="navbar-menu" id="navbarBasicExample">
+      <div class="navbar-menu is-shadowless" id="navbarBasicExample">
         <div class="navbar-end">
           <a class="navbar-item" href="{% url 'blog' %}"">Blog</a>
           <a class="navbar-item" href="{% url 'dictations'%}">Dictations</a>
