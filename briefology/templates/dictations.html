@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Dictations</h1>
+
+{% for dictation in dictations %}
+    <a href="{{dictation.get_absolute_url}}">{{dictation.title}}</a>
+{% endfor %}
+
+{% endblock %}

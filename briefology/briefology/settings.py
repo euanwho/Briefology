@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'dictionaryanalysis',
     'blog',
     'users',
+    'dictations'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                ##Genuinely have no idea what this means ##
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -133,3 +137,6 @@ STATICFILES_DIRS = [
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
