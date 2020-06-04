@@ -34,7 +34,7 @@ urlpatterns = [
     path('dictionaryanalysis', da_views.dictionaryanalysis, name='dictionaryanalysis'),
     path('analysisresults', da_views.analysisresults, name='analysisresults'),
     path('register', users_views.register, name='register'),
-    path('dictations', dictations_views.dictation_list_view, name='dictation_list_view'),
+    path('dictations', dictations_views.dictation_list_view, name='dictations'),
     path('dictations/<slug:slug>', dictations_views.dictation_detail_view, name='dictation_detail_view'),
     url(r'^search/$', dictations_views.search, name='search'),
 ]

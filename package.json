@@ -1,0 +1,25 @@
+{
+  "name": "briefology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "briefology/static/css/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url briefology/static/sass/styles.scss briefology/static/css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euanwho/Briefology.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euanwho/Briefology/issues"
+  },
+  "homepage": "https://github.com/euanwho/Briefology#readme",
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.14.1"
+  }
+}
