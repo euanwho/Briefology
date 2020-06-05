@@ -2,12 +2,13 @@
 
 {% block content %}
 
-<div class="columns is-centered">
-    <div class="column is-8 blog-container">
+<div class="columns is-centered is-mobile">
+    <div class="column is-8-tablet is-four-fifths-mobile blog-container">
         <div id="post-title-container">
             <h2 class="title">{{ dictation.title}}
                 <h3>Dictated by: Euan Williams</h3>
                 <h3>Uploaded on: {{ dictation.created_date|date}}<h3>
+                <h3>Difficulty: {{dictation.get_difficulty_display}}</h3>
             </h2>
         </div> 
         <audio controls>
@@ -20,8 +21,7 @@
             {% for tag in dictation.tags.all %}
                 <span class="tag is-info is-large">{{tag}}</span>
             {% endfor %}
-            <span class="tag">All</span>
-        </div>
+            </div>
             
         </ul>
     </div>

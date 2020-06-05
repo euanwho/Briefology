@@ -32,6 +32,17 @@ h1, h2, h3, h4, h5, h6, .title {
 .post {
   margin-bottom: 1.5rem; }
 
+.navbar-item {
+  font-family: "Roboto Slab", serif; }
+
+.navbar-item:hover, .navbar-item:active {
+  background-color: #ffffff;
+  color: #163358; }
+
+.navbar-burger {
+  height: 10px;
+  margin-top: 13px; }
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -329,7 +340,7 @@ pre {
 
 body {
   color: #4a4a4a;
-  font-size: 1em;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5; }
 

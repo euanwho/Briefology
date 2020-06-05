@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="columns is-centered">
-    <div class="column is-8 blog-container">
+<div class="columns is-centered is-mobile">
+    <div class="column is-8-tablet is-four-fifths-mobile blog-container">
         <div class="title-container">
             <h2 class="title is-1">Blog</h2>
         </div>
         {% for post in posts %}
         <div class="post">
-        <p class="title is-3"><a href="{{post.get_absolute_url}}">{{post.title}}</a></p>
-        <p class="subtitle is-5">{{post.text|truncatewords:30}}</p>
+            <p class="title is-3"><a href="{{post.get_absolute_url}}">{{post.title}}</a></p>
+            <div class="subtitle is-5">{{post.text|truncatewords:30|safe}}</div>
         </div>
         {% endfor %}
     </div>
