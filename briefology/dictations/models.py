@@ -27,6 +27,7 @@ class Dictation(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(default=timezone.now, blank=True, null=True)
     tags = TaggableManager()
+    length = models.DurationField()
 
     def __str__(self):
         return self.title
@@ -37,3 +38,9 @@ class Dictation(models.Model):
 
     def get_absolute_url(self):
         return reverse('dictation_detail_view', args=[str(self.slug)])
+
+    def display_length(self):
+        secs = self.length.total_seconds()
+        minutes, seconds = divmod(secs, 60)
+        minutes, seconds = int(minutes), int(seconds)
+        return f"{minutes:02}:{seconds:02}"

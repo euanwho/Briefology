@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <div class="columns is-centered is-mobile">
@@ -9,13 +8,15 @@
                 <h3>Dictated by: Euan Williams</h3>
                 <h3>Uploaded on: {{ dictation.created_date|date}}<h3>
                 <h3>Difficulty: {{dictation.get_difficulty_display}}</h3>
+                <h3>Length: {{dictation.display_length}}</h3>
             </h2>
         </div> 
         <audio controls>
             <source src="{{ dictation.audio.url }}" type="audio/mpeg">
         </audio>
         <p>{{ dictation.transcript}}</p>
-        <p>{{ dictation.words }}
+        <p>{{ dictation.words }}</p>
+        
 
         <div class="tags are-large">
             {% for tag in dictation.tags.all %}
