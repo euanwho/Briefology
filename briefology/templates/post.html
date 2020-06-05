@@ -4,10 +4,16 @@
 
 <div class="columns is-centered">
     <div class="column is-8 blog-container">
-        <div class="title-container">
-            <h2 class="title is-2">{{ post.title}}</h2>
+        <div id="post-title-container">
+            <h2 class="title">{{ post.title}}<h3>by Euan Williams - {{ post.created_date|date}}</h2>
+        </div>  
+        <div>{{ post.text|safe}}</div>
+
+        <div class="is-spaced tags are-medium">
+            {% for tag in post.tags.all %}
+                <span class="tag is-info is-large">{{tag}}</span>
+            {% endfor %}
         </div>
-        <div>{{ post.text}}</div>
 
     </div>
 </div>

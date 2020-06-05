@@ -3,14 +3,16 @@ from django.conf import settings
 from django.utils import timezone
 from django.template.defaultfilters import slugify
 from django.urls import reverse
+from taggit.managers import TaggableManager
 
 class Post(models.Model):
+    slug = models.SlugField(unique=True)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=200)
-    slug = models.SlugField(unique=True)
-    text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    text = models.TextField()
+    tags = TaggableManager()
 
     def save(self, *args, **kwargs):
         self.slug = self.slug or slugify(self.title)

@@ -3,7 +3,7 @@ from django.conf import settings
 from django.utils import timezone
 from django.template.defaultfilters import slugify
 from django.urls import reverse
-
+from taggit.managers import TaggableManager
 
 DIFFICULTIES = ( 
     ("E", "Easy"), 
@@ -26,6 +26,7 @@ class Dictation(models.Model):
     ) 
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(default=timezone.now, blank=True, null=True)
+    tags = TaggableManager()
 
     def __str__(self):
         return self.title
