@@ -1,85 +1,15 @@
 @charset "utf-8";
 
 // Import a Google Font
-// Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-
-// Font Variables
-$roboto-slab: 'Roboto Slab', serif;   
-$open-sans: 'Open Sans', sans-serif;
-
-// Styles
-body {
-  font-family: $open-sans;
-  font-weight: normal;
-}
-
-h1, h2, h3, h4, h5, h6, .title {
-  font-family: $roboto-slab;
-  font-weight: normal;
-}
-
-.button {
-  font-family: $roboto-slab;
-  font-weight: bold;
-}
-
-$family-primary: $open-sans, $roboto-slab;
-
-// Navbar Styles
-$navbar-background-color: #163358;
-$navbar-item-color: #ffffff;
-
-.navbar-brand a {
-    font-size: 2em;
-}
-
-.navbar-item {
-    font-size: 1.5em;
-}
+@import "fonts.scss";
+@import "nav.scss";
+@import "titles.scss";
 
 // Generic Classes
-.title-container {
-    margin: 1.5rem;
-}
-
-.title-container .title {
-    text-align: center
-}
-
-#post-title-container {
-  margin: 1.5rem 0;
-}
-
-#post-title-container .title {
-  margin-bottom: 0.5rem;
-}
-
-// Blog Page Styles
-.blog-container{
-    //background-color: #FAFAFA;
-}
+$footer-padding: 2rem;
 
 .post {
     margin-bottom: 1.5rem;
 }
 
-.navbar-item {
-  font-family: $roboto-slab;
-}
-
-.navbar-item:hover, .navbar-item:active {
-  background-color: $navbar-item-color;
-  color: $navbar-background-color;
-}
-
-.navbar-burger {
-  height: 10px;
-  margin-top: 13px;
-}
-
-
-$footer-padding: 2rem;
-
-$body-font-size: 1.25rem;
 @import "../../../node_modules/bulma/bulma.sass";

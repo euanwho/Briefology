@@ -1,8 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal; }
-
 h1, h2, h3, h4, h5, h6, .title {
   font-family: "Roboto Slab", serif;
   font-weight: normal; }
@@ -16,6 +12,17 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .navbar-item {
   font-size: 1.5em; }
+
+.navbar-item {
+  font-family: "Roboto Slab", serif; }
+
+.navbar-item:hover, .navbar-item:active {
+  background-color: #ffffff;
+  color: #163358; }
+
+.navbar-burger {
+  height: 10px;
+  margin-top: 13px; }
 
 .title-container {
   margin: 1.5rem; }
@@ -31,17 +38,6 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .post {
   margin-bottom: 1.5rem; }
-
-.navbar-item {
-  font-family: "Roboto Slab", serif; }
-
-.navbar-item:hover, .navbar-item:active {
-  background-color: #ffffff;
-  color: #163358; }
-
-.navbar-burger {
-  height: 10px;
-  margin-top: 13px; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
