@@ -1,19 +1,21 @@
 // Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans|Raleway|Merriweather:400italic,700italic,400,700);
 
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;   
 $open-sans: 'Open Sans', sans-serif;
-$family-primary: $open-sans, $roboto-slab;
+$merriweather: 'Merriweather';
+$raleway: 'Raleway';
+$family-primary: $merriweather, $roboto-slab;
 $body-font-size: 1.25rem;
   
 h1, h2, h3, h4, h5, h6, .title {
-    font-family: $roboto-slab;
+    font-family: $merriweather;
     font-weight: normal;
 }
   
 .button {
-    font-family: $roboto-slab;
+    font-family: $merriweather;
     font-weight: bold;
 }
   

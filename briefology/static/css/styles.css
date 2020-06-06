@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans|Raleway|Merriweather:400italic,700italic,400,700);
 h1, h2, h3, h4, h5, h6, .title {
-  font-family: "Roboto Slab", serif;
+  font-family: "Merriweather";
   font-weight: normal; }
 
 .button {
-  font-family: "Roboto Slab", serif;
+  font-family: "Merriweather";
   font-weight: bold; }
 
 .navbar-brand a {
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, .title {
   font-size: 1.5em; }
 
 .navbar-item {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Merriweather"; }
 
 .navbar-item:hover, .navbar-item:active {
   background-color: #ffffff;
@@ -326,7 +326,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans", sans-serif, "Roboto Slab", serif; }
+  font-family: "Merriweather", "Roboto Slab", serif; }
 
 code,
 pre {
@@ -869,7 +869,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Open Sans", sans-serif, "Roboto Slab", serif !important; }
+  font-family: "Merriweather", "Roboto Slab", serif !important; }
 
 .is-family-secondary {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
